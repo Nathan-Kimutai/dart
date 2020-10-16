@@ -1,4 +1,4 @@
-String createOrderMessage()  {
+String createOrderMessage() {
   var order = fetchUserOrder();
   return 'Your order is: $order';
 }
@@ -6,7 +6,7 @@ String createOrderMessage()  {
 Future<String> fetchUserOrder() =>
   Future.delayed(
       Duration(seconds: 2),
-      () => 'Large Lattle',
+      () => 'Large Lattle'
   );
 
 void main() {
